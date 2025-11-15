@@ -1,0 +1,184 @@
+.feedback-table-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.table-header h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.table-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 5px 10px;
+  gap: 10px;
+}
+
+.search-box svg {
+  color: #666;
+}
+
+.rating-filter {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+  min-width: 120px;
+}
+
+.search-btn {
+  padding: 8px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #5a67d8;
+}
+
+.export-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.export-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feedback-table thead {
+  background: #f8f9fa;
+}
+
+.feedback-table th {
+  padding: 15px;
+  text-align: left;
+  color: #666;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.feedback-table td {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.feedback-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.feedback-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.name-cell {
+  font-weight: 600;
+  color: #333;
+}
+
+.email-cell {
+  color: #666;
+  font-size: 14px;
+}
+
+.rating-cell {
+  display: flex;
+  gap: 2px;
+}
+
+.star-filled {
+  color: #ffd700;
+  fill: #ffd700;
+}
+
+.star-empty {
+  color: #ddd;
+}
+
+.message-cell {
+  color: #555;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+.date-cell {
+  color: #999;
+  font-size: 13px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.no-data p {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .table-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .table-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .search-box {
+    width: 100%;
+  }
+  
+  .export-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
